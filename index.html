@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Café Bloom - Official Website</title>
+  
+  <!-- Google Fonts: Playfair Display & Noto Sans JP -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= Header ================= -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="brand-name">Café Bloom</a>
+      <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="desktop-nav" id="site-navigation">
+        <ul class="nav-menu">
+          <li><a href="#concept" class="nav-link"><span class="nav-label-en">CONCEPT</span><span class="nav-label-ja">コンセプト</span></a></li>
+          <li><a href="#menu" class="nav-link"><span class="nav-label-en">MENU</span><span class="nav-label-ja">メニュー</span></a></li>
+          <li><a href="#access" class="nav-link"><span class="nav-label-en">ACCESS</span><span class="nav-label-ja">アクセス</span></a></li>
+          <li>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="instagram-icon-btn" aria-label="Instagram">
+              <svg class="instagram-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#3D2B1F" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="18" cy="6" r="0.75" fill="#3D2B1F" stroke="none" />
+              </svg><span class="instagram-label">Instagram</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= Main Content ================= -->
+  <main>
+    <!-- Hero / FV Section -->
+    <section class="hero-section">
+      <div class="hero-bg-wrapper">
+        <img src="images/hero.webp" alt="Café Bloom Interior" class="hero-bg-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">Cafe Bloom</h1>
+      </div>
+      <div class="hero-scroll-indicator">
+        <span class="scroll-text">SCROLL</span>
+        <i data-lucide="chevron-down" class="scroll-icon"></i>
+      </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section id="concept" class="concept-section">
+      <div class="container">
+        <div class="concept-grid">
+          <div class="concept-text-col">
+            <h2 class="concept-heading">
+              緑と自然光に包まれて、<br />
+              心ほどける自分だけの余白を。
+            </h2>
+            <div class="concept-body">
+              <p>慌ただしい毎日を少しだけ離れ、</p>
+              <p>柔らかな木漏れ日と植物に包まれるひととき。</p>
+              <p>身体を預けられる心地よい席で、深い深呼吸を。</p>
+              <p>身体に優しいスイーツと挽きたての珈琲が、</p>
+              <p>頑張るあなたをそっと労わります。</p>
+              <p>いつでも温かい余白をご用意してお迎えいたします。</p>
+            </div>
+          </div>
+          <div class="concept-image-col">
+            <div class="image-wrapper square-box">
+              <img src="images/concept-space.webp" alt="心地よい光が差し込むカフェの空間" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="section-title-wrap">
+          <span class="section-sub-en">MENU</span>
+          <h2 class="section-main-title">メニュー</h2>
+        </div>
+
+        <!-- 1. Seasonal Parfait Card -->
+        <article class="seasonal-card square-box">
+          <div class="seasonal-info">
+            <div class="seasonal-recommend-label">季節のおすすめ</div>
+            <h3 class="seasonal-dish-name">自家製エルダーフラワー＆白桃のパフェ</h3>
+            <p class="seasonal-desc">
+              旬の白桃を贅沢にコンポートし、ハーブ香る自家製ゼリーと重ねた夏季限定の特製パフェ。
+            </p>
+            <div class="seasonal-price-wrap">
+              <span class="price-val">¥1,480</span>
+              <span class="price-sub">（ドリンクセット ¥1,850）</span>
+            </div>
+          </div>
+          <div class="seasonal-thumb square-box">
+            <img src="images/menu-parfait.webp" alt="自家製エルダーフラワー＆白桃のパフェ" />
+          </div>
+        </article>
+
+        <!-- 2. Meal Cards (2 Columns) -->
+        <div class="meal-grid">
+          <!-- Meal 1: Linguine -->
+          <article class="meal-card square-box">
+            <div class="meal-thumb square-box">
+              <img src="images/menu-pasta.webp" alt="旬野菜とハーブ香る自家製リングイネ" />
+            </div>
+            <div class="meal-content">
+              <h3 class="meal-dish-name">旬野菜とハーブ香る自家製リングイネ</h3>
+              <p class="meal-desc">
+                ズッキーニやアスパラ、チェリートマトなど色鮮やかな旬野菜を、ハーブ香る特製オリーブオイルで軽やかに仕立てた一皿。
+              </p>
+              <div class="meal-price">¥1,380</div>
+            </div>
+          </article>
+
+          <!-- Meal 2: Grain Bowl -->
+          <article class="meal-card square-box">
+            <div class="meal-thumb square-box">
+              <img src="images/menu-bowl.webp" alt="彩り野菜とテンペのボタニカル雑穀ボウル" />
+            </div>
+            <div class="meal-content">
+              <h3 class="meal-dish-name">彩り野菜とテンペのボタニカル雑穀ボウル</h3>
+              <p class="meal-desc">
+                香ばしく焼き上げたロースト野菜やアボカド、自家製テンペをもっちり雑穀米と合わせ、芳醇なタヒニソースで。
+              </p>
+              <div class="meal-price">¥1,420</div>
+            </div>
+          </article>
+        </div>
+
+        <!-- 3. Classic Menu Lists (2 Columns) -->
+        <div class="menu-list-grid">
+          <!-- Drinks -->
+          <div class="menu-list-col square-box">
+            <h3 class="list-cat-title">Coffee & Drink</h3>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-title">ブルーム シングルオリジン ハンドドリップ</span>
+                <span class="item-cost">¥650</span>
+              </li>
+              <li class="item-row">
+                <span class="item-title">自家製ハニーオーツミルクラテ</span>
+                <span class="item-cost">¥720</span>
+              </li>
+              <li class="item-row">
+                <span class="item-title">水出しアイスコーヒー</span>
+                <span class="item-cost">¥600</span>
+              </li>
+              <li class="item-row">
+                <span class="item-title">季節の摘みたてハーブティー</span>
+                <span class="item-cost">¥680</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Food & Sweets -->
+          <div class="menu-list-col square-box">
+            <h3 class="list-cat-title">Food & Sweets</h3>
+            <ul class="item-list">
+              <li class="item-row">
+                <span class="item-title">自家製スコーンプレート</span>
+                <span class="item-cost">¥820</span>
+              </li>
+              <li class="item-row">
+                <span class="item-title">旬のオーガニックフルーツタルト</span>
+                <span class="item-cost">¥880</span>
+              </li>
+              <li class="item-row">
+                <span class="item-title">アボカド＆フムス サワードウトースト</span>
+                <span class="item-cost">¥1,100</span>
+              </li>
+              <li class="item-row">
+                <span class="item-title">季節野菜とキヌアのデリサラダボウル</span>
+                <span class="item-cost">¥1,250</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 4. Instagram Feed Section -->
+        <div class="instagram-section">
+          <div class="instagram-header">
+            <h3 class="instagram-heading">Instagram</h3>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="instagram-account">
+              <span>@cafebloom_official</span>
+              <i data-lucide="instagram"></i>
+            </a>
+          </div>
+
+          <div class="instagram-gallery">
+            <div class="insta-item square-box"><img src="images/instagram-lunch.webp" alt="ランチプレート" /></div>
+            <div class="insta-item square-box"><img src="images/instagram-parfait.webp" alt="季節のパフェ" /></div>
+            <div class="insta-item square-box"><img src="images/instagram-scone.webp" alt="焼きたてスコーン" /></div>
+            <div class="insta-item square-box"><img src="images/instagram-latte.webp" alt="ラテ" /></div>
+            <div class="insta-item square-box"><img src="images/instagram-coffee.webp" alt="ハンドドリップコーヒー" /></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Access Section -->
+    <section id="access" class="access-section">
+      <div class="container">
+        <!-- Section Title -->
+        <div class="section-title-wrap">
+          <span class="section-sub-en">ACCESS</span>
+          <h2 class="section-main-title">アクセス・店舗情報</h2>
+        </div>
+
+        <div class="access-grid">
+          <!-- Left: Shop Info Card -->
+          <div class="shop-info-card square-box">
+            <h3 class="info-card-heading">Shop Information</h3>
+            <dl class="info-dl">
+              <div class="info-row">
+                <dt>所在地</dt>
+                <dd>東京都目黒区緑が丘 2-14-8 Bloom Terrace 1F</dd>
+              </div>
+              <div class="info-row">
+                <dt>最寄り駅</dt>
+                <dd>東急「自由が丘駅」正面口より徒歩3分</dd>
+              </div>
+              <div class="info-row">
+                <dt>営業時間</dt>
+                <dd>09:00 - 19:00（L.O. 18:30）</dd>
+              </div>
+              <div class="info-row">
+                <dt>定休日</dt>
+                <dd>毎週水曜日（祝日の場合は営業翌日振替）</dd>
+              </div>
+              <div class="info-row">
+                <dt>客席数</dt>
+                <dd>全26席（店内16席 / テラス10席・ペット可）</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- Right: Stylized Google Map Card -->
+          <div class="map-card square-box">
+            <div class="map-placeholder-box">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.768221706524!2d139.6711956762687!3d35.60878353394898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f5210d28668b%3A0xd02f2af28227f837!2z44CSMTUyLTAwMzQg5p2x5Lqs6YO955uu6buS5Yy657eR44GM5LiY77yS5LiB55uu77yR77yU4oiS77yY!5e0!3m2!1sja!2sjp!4v1794501032644!5m2!1sja!2sjp"
+                title="Café Bloomの場所を示すGoogleマップ"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="copyright-text">© 2025 Café Bloom. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="ページの先頭へ戻る" title="ページの先頭へ戻る">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M12 19V5M5 12l7-7 7 7" />
+    </svg>
+  </button>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
