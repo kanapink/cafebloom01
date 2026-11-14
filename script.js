@@ -1,9 +1,5 @@
 /** Café Bloom - page interactions */
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.lucide) {
-    window.lucide.createIcons();
-  }
-
   const gallery = document.querySelector('.instagram-gallery');
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (gallery && !reduceMotion && 'IntersectionObserver' in window) {
@@ -80,17 +76,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener('click', (event) => {
-      const targetId = anchor.getAttribute('href');
-      if (!targetId || targetId === '#') return;
-      const target = document.querySelector(targetId);
-      if (!target) return;
-
-      event.preventDefault();
-      const headerHeight = header?.classList.contains('is-visible') ? header.offsetHeight : 0;
-      const top = target.getBoundingClientRect().top + window.scrollY - headerHeight;
-      window.scrollTo({ top, behavior: 'smooth' });
-    });
-  });
 });

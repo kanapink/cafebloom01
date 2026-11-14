@@ -5,14 +5,14 @@
    Theme: Botanical Warmth (角丸解除・四角形統一 / max-width: 1000px)
    Fonts:
      - Playfair Display (見出し、料理名、Shop Information)
-     - Noto Sans JP (本文、価格、説明文、ラベル、テーブル等)
+     - System Japanese sans-serif stack (本文、価格、説明文、ラベル、テーブル等)
    Colors:
      - Header / Footer: #3D2B1F
      - Page Base: #F5EFE6
      - Card / Container Base: #FFF8F5 / #FFFFFF
      - Text Main: #3D2B1F
      - Text Sub/Muted: #705D4D
-     - Accent Gold/Warm Brown: #C4956A / #B38257
+     - Accent Terracotta/Brown: #8B5A2B / #75471F
      - Border Line: #E8DCCF / #F0E6DB
    ========================================================================== */
 
@@ -27,14 +27,14 @@
 
   --color-text-main: #3D2B1F;
   --color-text-sub: #705D4D;
-  --color-accent: #C4956A;
-  --color-accent-hover: #B38257;
+  --color-accent: #8B5A2B;
+  --color-accent-hover: #75471F;
 
   --color-border: #E8DCCF;
   --color-border-subtle: #F0E6DB;
 
   --font-serif: 'Playfair Display', Georgia, serif;
-  --font-sans: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
 
   --max-content-width: 1000px;
 }
@@ -87,13 +87,6 @@ ul {
   max-width: var(--max-content-width);
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Lucide Icon Alignment */
-[data-lucide] {
-  vertical-align: middle;
-  display: inline-block;
-  stroke-width: 1.75;
 }
 
 /* ================= Scroll-activated Header ================= */
@@ -167,6 +160,10 @@ ul {
 
 .nav-link:hover {
   color: var(--color-accent);
+}
+
+section[id] {
+  scroll-margin-top: 64px;
 }
 
 .instagram-icon-btn {
@@ -299,6 +296,11 @@ ul {
 .scroll-icon {
   width: 18px;
   height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.75;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 @keyframes bounceDown {
@@ -590,12 +592,14 @@ ul {
   color: var(--color-accent);
 }
 
-.instagram-account [data-lucide] {
+.instagram-inline-icon {
   grid-column: 3;
   justify-self: start;
   width: 16px;
   height: 16px;
   margin-left: 0.4rem;
+  stroke: currentColor;
+  stroke-width: 1.75;
 }
 
 .instagram-gallery {
@@ -772,11 +776,6 @@ ul {
   color: var(--color-accent);
 }
 
-.map-bottom-link [data-lucide] {
-  width: 16px;
-  height: 16px;
-}
-
 /* ================= Footer (#3D2B1F) ================= */
 .site-footer {
   background-color: var(--color-header-footer);
@@ -861,6 +860,10 @@ ul {
 
 /* ================= Responsive Adjustments (Tablet & Mobile) ================= */
 @media (max-width: 768px) {
+  section[id] {
+    scroll-margin-top: 56px;
+  }
+
   .header-inner {
     height: 56px;
   }

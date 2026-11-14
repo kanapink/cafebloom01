@@ -4,14 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Café Bloom - Official Website</title>
+  <meta name="description" content="自由が丘のカフェ Café Bloom。緑と自然光に包まれた空間で、自家製スイーツや挽きたての珈琲をお楽しみください。" />
+  <meta name="theme-color" content="#F5EFE6" />
   
-  <!-- Google Fonts: Playfair Display & Noto Sans JP -->
+  <!-- Keep the display font optional so it does not block the first render. -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
-  
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preload" as="image" href="images/hero.webp" fetchpriority="high" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" media="print" onload="this.onload=null;this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" /></noscript>
   
   <!-- External CSS -->
   <link rel="stylesheet" href="style.css" />
@@ -49,7 +50,7 @@
     <!-- Hero / FV Section -->
     <section class="hero-section">
       <div class="hero-bg-wrapper">
-        <img src="images/hero.webp" alt="Café Bloom Interior" class="hero-bg-img" />
+        <img src="images/hero.webp" alt="Café Bloom Interior" class="hero-bg-img" width="1376" height="768" fetchpriority="high" decoding="async" />
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
@@ -57,7 +58,7 @@
       </div>
       <div class="hero-scroll-indicator">
         <span class="scroll-text">SCROLL</span>
-        <i data-lucide="chevron-down" class="scroll-icon"></i>
+        <svg class="scroll-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m6 9 6 6 6-6" /></svg>
       </div>
     </section>
 
@@ -81,7 +82,7 @@
           </div>
           <div class="concept-image-col">
             <div class="image-wrapper square-box">
-              <img src="images/concept-space.webp" alt="心地よい光が差し込むカフェの空間" />
+              <img src="images/concept-space.webp" alt="心地よい光が差し込むカフェの空間" width="1000" height="746" loading="lazy" decoding="async" />
             </div>
           </div>
         </div>
@@ -111,7 +112,7 @@
             </div>
           </div>
           <div class="seasonal-thumb square-box">
-            <img src="images/menu-parfait.webp" alt="自家製エルダーフラワー＆白桃のパフェ" />
+            <img src="images/menu-parfait.webp" alt="自家製エルダーフラワー＆白桃のパフェ" width="1428" height="896" loading="lazy" decoding="async" />
           </div>
         </article>
 
@@ -120,7 +121,7 @@
           <!-- Meal 1: Linguine -->
           <article class="meal-card square-box">
             <div class="meal-thumb square-box">
-              <img src="images/menu-pasta.webp" alt="旬野菜とハーブ香る自家製リングイネ" />
+              <img src="images/menu-pasta.webp" alt="旬野菜とハーブ香る自家製リングイネ" width="1200" height="896" loading="lazy" decoding="async" />
             </div>
             <div class="meal-content">
               <h3 class="meal-dish-name">旬野菜とハーブ香る自家製リングイネ</h3>
@@ -134,7 +135,7 @@
           <!-- Meal 2: Grain Bowl -->
           <article class="meal-card square-box">
             <div class="meal-thumb square-box">
-              <img src="images/menu-bowl.webp" alt="彩り野菜とテンペのボタニカル雑穀ボウル" />
+              <img src="images/menu-bowl.webp" alt="彩り野菜とテンペのボタニカル雑穀ボウル" width="1200" height="896" loading="lazy" decoding="async" />
             </div>
             <div class="meal-content">
               <h3 class="meal-dish-name">彩り野菜とテンペのボタニカル雑穀ボウル</h3>
@@ -201,16 +202,16 @@
             <h3 class="instagram-heading">Instagram</h3>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="instagram-account">
               <span>@cafebloom_official</span>
-              <i data-lucide="instagram"></i>
+              <svg class="instagram-inline-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r=".75" fill="currentColor" stroke="none"/></svg>
             </a>
           </div>
 
           <div class="instagram-gallery">
-            <div class="insta-item square-box"><img src="images/instagram-lunch.webp" alt="ランチプレート" /></div>
-            <div class="insta-item square-box"><img src="images/instagram-parfait.webp" alt="季節のパフェ" /></div>
-            <div class="insta-item square-box"><img src="images/instagram-scone.webp" alt="焼きたてスコーン" /></div>
-            <div class="insta-item square-box"><img src="images/instagram-latte.webp" alt="ラテ" /></div>
-            <div class="insta-item square-box"><img src="images/instagram-coffee.webp" alt="ハンドドリップコーヒー" /></div>
+            <div class="insta-item square-box"><img src="images/instagram-lunch.webp" alt="ランチプレート" width="1200" height="896" loading="lazy" decoding="async" /></div>
+            <div class="insta-item square-box"><img src="images/instagram-parfait.webp" alt="季節のパフェ" width="1000" height="746" loading="lazy" decoding="async" /></div>
+            <div class="insta-item square-box"><img src="images/instagram-scone.webp" alt="焼きたてスコーン" width="1000" height="746" loading="lazy" decoding="async" /></div>
+            <div class="insta-item square-box"><img src="images/instagram-latte.webp" alt="ラテ" width="1000" height="746" loading="lazy" decoding="async" /></div>
+            <div class="insta-item square-box"><img src="images/instagram-coffee.webp" alt="ハンドドリップコーヒー" width="1200" height="896" loading="lazy" decoding="async" /></div>
           </div>
         </div>
 
@@ -284,6 +285,6 @@
   </button>
 
   <!-- External JavaScript -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
